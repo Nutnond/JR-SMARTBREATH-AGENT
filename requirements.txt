@@ -1,0 +1,9 @@
+autogen-ext[openai,ollama]
+autogen-agentchat
+PyJWT
+gql[requests]
+requests
+fastapi 
+uvicorn  
+python-multipart
+python-dotenv
