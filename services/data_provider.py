@@ -2,11 +2,11 @@
 
 import requests
 from typing import Dict, Union
-
+from config import BASE_CORS_API_URL
 from auth.client_token import generate_client_token 
 
 # API_URL = "http://localhost:8080"
-API_URL ="http://147.50.227.142:3000"
+API_URL = BASE_CORS_API_URL
 VERIFY_HTTPS = True
 
 # -------------------------------------------------------------------

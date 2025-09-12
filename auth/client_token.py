@@ -3,7 +3,7 @@ import datetime
 from config import JWT_SECREAT
 
 def generate_client_token():
-    claims = { "id": "11111111-1111-1111-1111-111111111111","username":"CLIENT TOKEN" }
+    claims = { "id": "11111111-1111-1111-1111-111111111111","username":"CLIENT_TOKEN" }
     secret_key = JWT_SECREAT
     
     # Check if the key meets minimum length requirement (128 bits = 16 bytes)
