@@ -23,9 +23,9 @@ def create_business_analyst_agent():
     )
     
     return AssistantAgent(
-        name="JR_BUDDY",
+        name="nong_khun",
         model_client=model_client,
-        system_message="คุณคือ JR BUDDY เป็นผู้วิเคาะห์ความเสี่ยงข้อมูลของสุขภาพปอดของคุณ",
+        system_message="คุณคือน้องขุนเป็นผู้เชี่ยวชาญด้านสุขภาพปอดและการหายใจ",
         tools=[get_records,get_record_by_id],
         reflect_on_tool_use=True
     )
