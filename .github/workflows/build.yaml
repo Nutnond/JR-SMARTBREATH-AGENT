@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: ./Dockerfile       # ปรับตามที่เก็บ Dockerfile (เช่น CI/Dockerfile)
+          file: ./DockerFile       # ปรับตามที่เก็บ Dockerfile (เช่น CI/Dockerfile)
           push: false                 # ยังไม่ push ตอนนี้
           load: true                  # สำคัญ: โหลดเข้า docker daemon สำหรับขั้นตอน push ถัดไป
           tags: ${{ env.DOCKER_IMAGE }}:latest
