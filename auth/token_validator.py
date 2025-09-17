@@ -1,6 +1,6 @@
 import jwt
 from jwt import InvalidTokenError, ExpiredSignatureError
-from config import JWT_SECREAT
+from config import JWT_SECRET
 
 class UnauthorizedException(Exception):
     pass
@@ -9,7 +9,7 @@ class InternalServerErrorException(Exception):
     pass
 
 def validate_token(token: str) -> dict:
-    secret_key = JWT_SECREAT
+    secret_key = JWT_SECRET
     
     try:
         decoded_token = jwt.decode(
