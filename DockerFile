@@ -1,5 +1,6 @@
+# syntax=docker/dockerfile:1
 # Use Python 3.12.7 as base image
-FROM python:3.12.10-slim
+FROM python:3.12.11-slim
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -16,9 +17,6 @@ RUN pip install --upgrade pip \
 
 # Copy the rest of the application code
 COPY . .
-
-# Remove existing .env (if any) and copy production env to .env
-RUN rm -f .env && cp .production.env .env
 
 # Expose port
 EXPOSE 8000
